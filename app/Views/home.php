@@ -1,6 +1,6 @@
 <div id="home" class="container-fluid text-light">
     <div class="d-flex justify-content-center align-items-center flex-column">
-        <h1 class="mb-4">Edaïns Vignolle | Développeur Web Freelance</h1>
+        <h1 class="mb-4 fw-bold">Edaïns Vignolle | Développeur Web Freelance</h1>
         <p class="text-center fw-normal">Développement de logiciels, applications web et mobiles, prestations de services en<br/>programmation informatique, création et exploitation de solutions SaaS.</p>
 
         <div class="mt-4">
@@ -11,7 +11,7 @@
 </div>
 
 <div class="container-fluid mb-5">
-    <h2 class="text-center py-5">Qui suis-je ?</h2>
+    <h2 class="text-center py-5 fw-bold">Qui suis-je ?</h2>
 
     <div class="d-flex justify-content-between gap-5">
         <img src="<?= asset('images/avatar.png') ?>" alt="" class="rounded-circle" width="200">
@@ -28,6 +28,6 @@
 </div>
 
 <div class="conainer-fluid mb-5 bg-section-light">
-    <h2 class="text-center py-5">Mes réalisations</h2>
+    <h2 class="text-center py-5 fw-bold">Mes réalisations</h2>
 
 </div>
