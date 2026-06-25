@@ -1,4 +1,1 @@
-const app = Vue.createApp({});
-
-
-app.mount('#app');
+globalThis.app.mount('#app');
