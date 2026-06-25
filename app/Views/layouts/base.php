@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="<?= asset('css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/style.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/fonts.css') ?>">
+
+    <script src="<?= asset('js/vue-dev.js') ?>"></script>
 </head>
 <body>
     <header id="header">
