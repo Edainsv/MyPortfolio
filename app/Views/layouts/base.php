@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="<?= asset('css/style.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/fonts.css') ?>">
 
+    <script src="<?= asset('js/helpers.js') ?>"></script>
     <script src="<?= asset('js/vue.js') ?>"></script>
+    <script src="<?= asset('js/vue-mixins.js') ?>"></script>
 
     <script>
         globalThis.app = Vue.createApp({});
@@ -22,7 +24,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#hero">Edaïns Vignolle | Développeur Informatique.</a>
+                <a class="navbar-brand fw-bold" href="#hero">E.V.</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,7 +54,7 @@
         <?= $content ?>
     </main>
 
-    <footer class="bg-white border-top border-secondary py-6 px-4">
+    <footer class="bg-white border-top border-secondary py-5 px-4">
         <div class="container-fluid mx-auto">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
                 <div class="d-flex gap-4">

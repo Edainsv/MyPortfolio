@@ -4,13 +4,13 @@
         <p class="text-center fw-normal">Développement de logiciels, applications web et mobiles, prestations de services en<br/>programmation informatique, création et exploitation de solutions SaaS.</p>
 
         <div class="mt-4">
-            <a href="" class="btn btn-light btn-lg rounded-5 px-4 me-3">Voir mes projets</a>
-            <a href="" class="btn btn-outline-light btn-lg rounded-5 px-4">Me contacter</a>
+            <a href="#projects" class="btn btn-light btn-lg rounded-pill px-4 me-3">Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4">Me contacter</a>
         </div>
     </div>
 </div>
 
-<div class="container-fluid mb-5">
+<div class="container-fluid mb-5" id="about">
     <h2 class="text-center py-5 fw-bold">Qui suis-je ?</h2>
 
     <div class="d-flex justify-content-between gap-5">
@@ -20,14 +20,81 @@
             <p>Je suis Edaïns Vignolle, développeur web freelance passionné par la création de solutions digitales performantes. Avec plusieurs années d'expérience, j'aide les entreprises à concrétiser leurs projets numériques avec des outils modernes et sur-mesure.</p>
 
             <div class="mt-4">
-                <a href="" class="btn btn-primary btn-lg rounded-5 px-4 me-3">Télécharger mon CV</a>
-                <a href="" class="btn btn-outline-secondary btn-lg rounded-5 px-4">Me contacter</a>
+                <a href="" class="btn btn-primary btn-lg rounded-pill px-4 me-3">Télécharger mon CV</a>
+                <a href="#contact" class="btn btn-outline-secondary btn-lg rounded-pill px-4">Me contacter</a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="conainer-fluid mb-5 bg-section-light">
+<div class="container-fluid pb-5 bg-section-light" id="projects">
     <h2 class="text-center py-5 fw-bold">Mes réalisations</h2>
 
+    <div class="row g-4">
+        <div class="col-sm-6">
+            <card-project></card-project>
+        </div>
+
+        <div class="col-sm-6">
+            <card-project></card-project>
+        </div>
+
+        <div class="col-sm-6">
+            <card-project></card-project>
+        </div>
+
+        <div class="col-sm-6">
+            <card-project></card-project>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pb-5" id="skills">
+    <h2 class="text-center py-5 fw-bold">Mes expertises</h2>
+
+    <div class="m-auto w-75">
+        <progress-bar
+            v-bind:title="'Laravel (PHP)'"
+            v-bind:value="90"
+        ></progress-bar>
+
+        <progress-bar
+            v-bind:title="'VueJs (JavaScript)'"
+            v-bind:value="85"
+        ></progress-bar>
+
+        <progress-bar
+            v-bind:title="'HTML / CSS'"
+            v-bind:value="95"
+        ></progress-bar>
+
+        <progress-bar
+            v-bind:title="'Bootstrap'"
+            v-bind:value="90"
+        ></progress-bar>
+    </div>
+</div>
+
+<div class="container-fluid pb-5 bg-section-light" id="contact">
+    <h2 class="text-center pt-5 pb-4 fw-bold">Prêt à collaborer ?</h2>
+
+    <p class="text-center text-muted">Discutons de votre projet. Envoyez-moi un message et je vous répondrai sous 24h.</p>
+
+    <form class="w-50 m-auto">
+        <div class="mb-3">
+            <label class="form-label">Votre email</label>
+            <input type="email" class="form-control form-control-lg" placeholder="Votre email">
+        </div>
+
+        <div class="mb-4">
+            <label class="form-label">Votre message</label>
+            <textarea class="form-control form-control-lg" rows="5" placeholder="Votre message"></textarea>
+        </div>
+
+        <div class="d-grid mb-4">
+            <button type="submit" class="btn btn-dark btn-lg rounded-pill">
+                Envoyer le message
+            </button>
+        </div>
+    </form>
 </div>

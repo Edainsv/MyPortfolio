@@ -3,7 +3,8 @@
 :root {
     --primary-color: #111827;
     --primary-color-hover: #1f2937;
-    --secondary-color: #661717;
+    --secondary-color: #B08968;
+    --secondary-color-hover: #9C7054;
     --background-light: #F9FAFB;
     --main-height-navbar: 55px;
 }
@@ -22,6 +23,16 @@ body, html {
     height: var(--main-height-navbar);
 }
 
+.text-primary {
+    color: var(--primary-color) !important;
+}
+.text-primary-hover {
+    color: var(--primary-color-hover);
+}
+
+.bg-primary {
+    background: var(--primary-color) !important;
+}
 .bg-section-light {
     background: var(--background-light);
 }
@@ -34,6 +45,16 @@ body, html {
     border-color: var(--primary-color-hover);
 }
 
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+}
+.btn-secondary:hover {
+    background-color: var(--secondary-color-hover);
+    border-color: var(--secondary-color-hover);
+}
+
 .btn-outline-secondary {
     color: var(--primary-color);
     border-color: var(--primary-color);
@@ -41,6 +62,15 @@ body, html {
 .btn-outline-secondary:hover {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
+}
+
+.card-project {
+    height: 450px;
+}
+.card-project img {
+    object-fit: cover;
+    height: 270px;
+    width: 100%;
 }
 
 /* Home */
