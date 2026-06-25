@@ -1,0 +1,15 @@
+{
+    "name": "syzona/my-portfolio",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "edainsv",
+            "email": "edainsv.pro@gmail.com"
+        }
+    ],
+    "require": {}
+}
