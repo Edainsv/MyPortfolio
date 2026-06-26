@@ -18,11 +18,11 @@
             
 
             <div class="col-auto text-center">
-                <img src="<?= asset('images/avatar.png') ?>" alt="Photo de profil" class="rounded-circle avatar border border-2 border-primary">
+                <img src="<?= asset('images/avatar.png') ?>" alt="Photo de profil" class="rounded-circle avatar">
             </div>
 
             <div class="col">
-                <p class="text-center">
+                <p>
                     Je suis Edaïns Vignolle, développeur web freelance passionné par la création de solutions digitales performantes.
                     Avec plusieurs années d'expérience, j'aide les entreprises à concrétiser leurs projets numériques avec des outils modernes et sur-mesure.
                 </p>

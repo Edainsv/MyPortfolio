@@ -57,7 +57,7 @@
         <?= $content ?>
     </main>
 
-    <footer class="bg-white border-top border-secondary py-5 px-4">
+    <footer class="bg-white border-top border-primary py-5 px-4">
         <div class="container-fluid mx-auto">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
                 <div class="d-flex gap-4">
