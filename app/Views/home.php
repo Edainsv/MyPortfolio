@@ -18,7 +18,7 @@
             
 
             <div class="col-auto text-center">
-                <img src="<?= asset('images/avatar.png') ?>" alt="Photo de profil" class="rounded-circle avatar border border-2 border-secondary">
+                <img src="<?= asset('images/avatar.png') ?>" alt="Photo de profil" class="rounded-circle avatar border border-2 border-primary">
             </div>
 
             <div class="col">

@@ -41,7 +41,7 @@ body, html {
     height: var(--main-height-navbar);
 }
 
-.border-secondary {
+.border-primary {
     border-color: var(--primary-color) !important;
 }
 .border-secondary {
