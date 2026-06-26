@@ -1,10 +1,10 @@
 <div id="home" class="container-fluid text-light">
     <div class="d-flex justify-content-center align-items-center flex-column">
-        <h1 class="mb-4 fw-bold">Edaïns Vignolle | Développeur Web Freelance</h1>
-        <p class="text-center fw-normal">Développement de logiciels, applications web et mobiles, prestations de services en<br/>programmation informatique, création et exploitation de solutions SaaS.</p>
+        <h1 class="mb-4 fw-bold text-center">Applications web sur-mesure</h1>
+        <p class="text-center fw-normal">Conception d'applications web sur-mesure, plateformes métiers et solutions SaaS performantes.</p>
 
         <div class="mt-4">
-            <a href="#projects" class="btn btn-light btn-lg rounded-pill px-4 me-3">Voir mes projets</a>
+            <a href="#projects" class="btn btn-light btn-lg rounded-pill px-4 me-3">Voir mes réalisations</a>
             <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4">Me contacter</a>
         </div>
     </div>
@@ -13,38 +13,67 @@
 <div class="container-fluid mb-5" id="about">
     <h2 class="text-center py-5 fw-bold">Qui suis-je ?</h2>
 
-    <div class="d-flex justify-content-between gap-5">
-        <img src="<?= asset('images/avatar.png') ?>" alt="" class="rounded-circle" width="200">
+    <div class="row align-items-center">
+        
 
-        <div>
-            <p>Je suis Edaïns Vignolle, développeur web freelance passionné par la création de solutions digitales performantes. Avec plusieurs années d'expérience, j'aide les entreprises à concrétiser leurs projets numériques avec des outils modernes et sur-mesure.</p>
+        <div class="col-auto text-center">
+            <img src="<?= asset('images/avatar.png') ?>" alt="Photo de profil" class="rounded-circle avatar">
+        </div>
+
+        <div class="col">
+            <p class="text-center">
+                Je suis Edaïns Vignolle, développeur web freelance passionné par la création de solutions digitales performantes.
+                Avec plusieurs années d'expérience, j'aide les entreprises à concrétiser leurs projets numériques avec des outils modernes et sur-mesure.
+            </p>
 
             <div class="mt-4">
                 <a href="" class="btn btn-primary btn-lg rounded-pill px-4 me-3">Télécharger mon CV</a>
                 <a href="#contact" class="btn btn-outline-secondary btn-lg rounded-pill px-4">Me contacter</a>
             </div>
         </div>
+
     </div>
 </div>
+
 
 <div class="container-fluid pb-5 bg-section-light" id="projects">
     <h2 class="text-center py-5 fw-bold">Mes réalisations</h2>
 
     <div class="row g-4">
         <div class="col-sm-6">
-            <card-project></card-project>
+            <card-project
+                v-bind:title="'Dashboard Analytics - Startup FinTech'"
+                v-bind:desc="'Objectif : centraliser les KPIs en temps réel. Résultat : +40% d\'efficacité opérationnelle.'"
+                v-bind:link="'#'"
+                v-bind:img="'images/bg-home.jpg'"
+            ></card-project>
         </div>
 
         <div class="col-sm-6">
-            <card-project></card-project>
+            <card-project
+                v-bind:title="'Dashboard Analytics - Startup FinTech'"
+                v-bind:desc="'Objectif : centraliser les KPIs en temps réel. Résultat : +40% d\'efficacité opérationnelle.'"
+                v-bind:link="'#'"
+                v-bind:img="'images/bg-home.jpg'"
+            ></card-project>
         </div>
 
         <div class="col-sm-6">
-            <card-project></card-project>
+            <card-project
+                v-bind:title="'Dashboard Analytics - Startup FinTech'"
+                v-bind:desc="'Objectif : centraliser les KPIs en temps réel. Résultat : +40% d\'efficacité opérationnelle.'"
+                v-bind:link="'#'"
+                v-bind:img="'images/bg-home.jpg'"
+            ></card-project>
         </div>
 
         <div class="col-sm-6">
-            <card-project></card-project>
+            <card-project
+                v-bind:title="'Dashboard Analytics - Startup FinTech'"
+                v-bind:desc="'Objectif : centraliser les KPIs en temps réel. Résultat : +40% d\'efficacité opérationnelle.'"
+                v-bind:link="'#'"
+                v-bind:img="'images/bg-home.jpg'"
+            ></card-project>
         </div>
     </div>
 </div>

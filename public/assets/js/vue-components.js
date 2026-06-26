@@ -4,22 +4,22 @@ globalThis.app.component('card-project', {
     template: `
     <div class="card-project card border-0 shadow-sm rounded-4 overflow-hidden">
         <img
-            v-bind:src="asset('images/bg-home.jpg')"
+            v-bind:src="asset(img)"
             class="card-img-top"
             alt="Projet"
         >
 
         <div class="card-body bg-white d-flex flex-column justify-content-evenly">
             <h5 class="card-title fw-bold mb-2">
-                Dashboard Analytics - Startup FinTech
+                {{ title }}
             </h5>
 
             <p class="card-text text-muted">
-                Objectif : centraliser les KPIs en temps réel. Résultat : +40% d'efficacité opérationnelle.
+                {{ desc }}
             </p>
 
             <div>
-                <a href="#" class="btn btn-primary rounded-pill px-4">
+                <a v-bind:href="link" class="btn btn-primary rounded-pill px-4">
                     Voir le projet
                 </a>
             </div>

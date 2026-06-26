@@ -5,16 +5,19 @@
 
     <meta charset="UTF-8">
 
+    <!-- Css -->
     <link rel="stylesheet" href="<?= asset('css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/style.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/fonts.css') ?>">
 
+    <!-- Js -->
+    <script src="<?= asset('js/jquery.js') ?>"></script>
     <script src="<?= asset('js/helpers.js') ?>"></script>
     <script src="<?= asset('js/vue.js') ?>"></script>
     <script src="<?= asset('js/vue-mixins.js') ?>"></script>
 
     <script>
-        globalThis.app = Vue.createApp({});
+        globalThis.app = Vue.createApp();
     </script>
 
     <script src="<?= asset('js/vue-components.js') ?>"></script>
@@ -24,7 +27,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#hero">E.V.</a>
+                <a class="navbar-brand fw-bold" href="#hero">Edaïns Vignolle</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

@@ -23,6 +23,11 @@ body, html {
     height: var(--main-height-navbar);
 }
 
+.avatar {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
 .text-primary {
     color: var(--primary-color) !important;
 }
