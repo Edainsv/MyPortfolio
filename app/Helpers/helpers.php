@@ -39,3 +39,14 @@ if (!function_exists('route_exists')) {
         return false;
     }
 }
+
+if (!function_exists('json')) {
+    function json($data): string
+    {
+        return htmlspecialchars(
+            json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES),
+            ENT_QUOTES,
+            'UTF-8'
+        );
+    }
+}

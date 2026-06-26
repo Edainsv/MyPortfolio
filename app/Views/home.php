@@ -11,69 +11,39 @@
 </div>
 
 <div class="container-fluid mb-5" id="about">
-    <h2 class="text-center py-5 fw-bold">Qui suis-je ?</h2>
+    <div class="w-75 m-auto">
+        <h2 class="text-center py-5 fw-bold">Qui suis-je ?</h2>
 
-    <div class="row align-items-center">
-        
+        <div class="row align-items-center">
+            
 
-        <div class="col-auto text-center">
-            <img src="<?= asset('images/avatar.png') ?>" alt="Photo de profil" class="rounded-circle avatar">
-        </div>
-
-        <div class="col">
-            <p class="text-center">
-                Je suis Edaïns Vignolle, développeur web freelance passionné par la création de solutions digitales performantes.
-                Avec plusieurs années d'expérience, j'aide les entreprises à concrétiser leurs projets numériques avec des outils modernes et sur-mesure.
-            </p>
-
-            <div class="mt-4">
-                <a href="" class="btn btn-primary btn-lg rounded-pill px-4 me-3">Télécharger mon CV</a>
-                <a href="#contact" class="btn btn-outline-secondary btn-lg rounded-pill px-4">Me contacter</a>
+            <div class="col-auto text-center">
+                <img src="<?= asset('images/avatar.png') ?>" alt="Photo de profil" class="rounded-circle avatar border border-2 border-secondary">
             </div>
-        </div>
 
+            <div class="col">
+                <p class="text-center">
+                    Je suis Edaïns Vignolle, développeur web freelance passionné par la création de solutions digitales performantes.
+                    Avec plusieurs années d'expérience, j'aide les entreprises à concrétiser leurs projets numériques avec des outils modernes et sur-mesure.
+                </p>
+
+                <div class="mt-4">
+                    <a href="" class="btn btn-primary btn-lg rounded-pill px-4 me-3">Télécharger mon CV</a>
+                    <a href="#contact" class="btn btn-outline-secondary btn-lg rounded-pill px-4">Me contacter</a>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 
 
 <div class="container-fluid pb-5 bg-section-light" id="projects">
-    <h2 class="text-center py-5 fw-bold">Mes réalisations</h2>
+    <div class="w-75 m-auto">
+        <h2 class="text-center py-5 fw-bold">Mes réalisations</h2>
 
-    <div class="row g-4">
-        <div class="col-sm-6">
-            <card-project
-                v-bind:title="'Dashboard Analytics - Startup FinTech'"
-                v-bind:desc="'Objectif : centraliser les KPIs en temps réel. Résultat : +40% d\'efficacité opérationnelle.'"
-                v-bind:link="'#'"
-                v-bind:img="'images/bg-home.jpg'"
-            ></card-project>
-        </div>
-
-        <div class="col-sm-6">
-            <card-project
-                v-bind:title="'Dashboard Analytics - Startup FinTech'"
-                v-bind:desc="'Objectif : centraliser les KPIs en temps réel. Résultat : +40% d\'efficacité opérationnelle.'"
-                v-bind:link="'#'"
-                v-bind:img="'images/bg-home.jpg'"
-            ></card-project>
-        </div>
-
-        <div class="col-sm-6">
-            <card-project
-                v-bind:title="'Dashboard Analytics - Startup FinTech'"
-                v-bind:desc="'Objectif : centraliser les KPIs en temps réel. Résultat : +40% d\'efficacité opérationnelle.'"
-                v-bind:link="'#'"
-                v-bind:img="'images/bg-home.jpg'"
-            ></card-project>
-        </div>
-
-        <div class="col-sm-6">
-            <card-project
-                v-bind:title="'Dashboard Analytics - Startup FinTech'"
-                v-bind:desc="'Objectif : centraliser les KPIs en temps réel. Résultat : +40% d\'efficacité opérationnelle.'"
-                v-bind:link="'#'"
-                v-bind:img="'images/bg-home.jpg'"
-            ></card-project>
+        <div class="row g-4">
+            <card-projects v-bind:cards="<?= json($card_projects) ?>"></card-projects>
         </div>
     </div>
 </div>
@@ -81,26 +51,18 @@
 <div class="container-fluid pb-5" id="skills">
     <h2 class="text-center py-5 fw-bold">Mes expertises</h2>
 
-    <div class="m-auto w-75">
-        <progress-bar
-            v-bind:title="'Laravel (PHP)'"
-            v-bind:value="90"
-        ></progress-bar>
+    <div class="m-auto w-50">
+        <h3 class="mb-4">Expertises principales</h3>
 
-        <progress-bar
-            v-bind:title="'VueJs (JavaScript)'"
-            v-bind:value="85"
-        ></progress-bar>
+        <my-primary-skills v-bind:skills="<?= json($primary_skills) ?>"></my-primary-skills>
 
-        <progress-bar
-            v-bind:title="'HTML / CSS'"
-            v-bind:value="95"
-        ></progress-bar>
+        <hr class="mt-5 border-muted mb-4">
 
-        <progress-bar
-            v-bind:title="'Bootstrap'"
-            v-bind:value="90"
-        ></progress-bar>
+        <div>
+            <h3 class="text-muted text-uppercase mb-4">Autres technologies maîtrisées</h3>
+
+            <my-secondary-skills v-bind:skills="<?= json($secondary_skills) ?>"></my-secondary-skills>
+        </div>
     </div>
 </div>
 

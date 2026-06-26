@@ -5,12 +5,30 @@
     --primary-color-hover: #1f2937;
     --secondary-color: #B08968;
     --secondary-color-hover: #9C7054;
+    --muted-color: #212529bf;
     --background-light: #F9FAFB;
     --main-height-navbar: 55px;
 }
 
+.text-muted {
+    color: var(--muted-color) !important;
+}
+.border-muted {
+    border-color: var(--muted-color);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+h4 {
+    font-size: 1.1rem;
 }
 
 body, html {
@@ -23,6 +41,13 @@ body, html {
     height: var(--main-height-navbar);
 }
 
+.border-secondary {
+    border-color: var(--primary-color) !important;
+}
+.border-secondary {
+    border-color: var(--secondary-color) !important;
+}
+
 .avatar {
     object-fit: cover;
     width: 200px;
@@ -33,6 +58,12 @@ body, html {
 }
 .text-primary-hover {
     color: var(--primary-color-hover);
+}
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+.text-secondary-hover {
+    color: var(--secondary-color-hover);
 }
 
 .bg-primary {
