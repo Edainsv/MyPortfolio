@@ -74,12 +74,12 @@
     <form class="w-50 m-auto">
         <div class="mb-3">
             <label class="form-label">Votre email</label>
-            <input v-model="data_form.email" type="email" class="form-control form-control-lg" placeholder="Votre email">
+            <input type="email" class="form-control form-control-lg" placeholder="Votre email">
         </div>
 
         <div class="mb-4">
             <label class="form-label">Votre message</label>
-            <textarea v-model="data_form.message" class="form-control form-control-lg" rows="5" placeholder="Votre message"></textarea>
+            <textarea class="form-control form-control-lg" rows="5" placeholder="Votre message"></textarea>
         </div>
 
         <div class="d-grid mb-4">
