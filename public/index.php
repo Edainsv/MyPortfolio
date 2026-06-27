@@ -5,7 +5,7 @@ define('APP_PATH', dirname(__DIR__));
 require APP_PATH . '/vendor/autoload.php';
 require APP_PATH . '/app/Helpers/helpers.php';
 
-use App\Router;
+use App\Core\Router;
 
 $router = new Router();
 

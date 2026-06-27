@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Core;
 
 class Router
 {
@@ -34,7 +34,7 @@ class Router
 
         [$controller, $controllerMethod] = explode('@', $route['action']);
 
-        $controller = "App\\Controllers\\{$controller}";
+        $controller = "App\\Controllers\\Web\\{$controller}";
 
         $instance = new $controller();
 
